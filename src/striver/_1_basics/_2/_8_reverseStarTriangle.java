@@ -1,6 +1,6 @@
 package striver._1_basics._2;
 
-public class _8_reverse_star_triangle {
+public class _8_reverseStarTriangle {
   public static void nStarTriangle(int n) {
     int spcCount = 0;
     int starCount = 2 * n - 1;

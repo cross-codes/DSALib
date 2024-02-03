@@ -1,6 +1,6 @@
 package striver._1_basics._2;
 
-public class _7_star_triangle {
+public class _7_starTriangle {
   public static void nStarTriangle(int n) {
     int spcCount = n - 1;
     int starCount = 1;

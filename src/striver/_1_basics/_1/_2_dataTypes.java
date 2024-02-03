@@ -1,6 +1,6 @@
 package striver._1_basics._1;
 
-public class _2_data_types {
+public class _2_dataTypes {
   public static int sizeof(String datatype) {
     switch (datatype) {
       case "Integer":

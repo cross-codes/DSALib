@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class _1_input_output {
+public class _1_inputOutput {
   public static int solution(char input) throws IOException {
     int ascii_val = (int) input;
 

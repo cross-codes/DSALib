@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class _6_while_loops {
+public class _6_whileLoops {
   public static int[] solution(String number) {
     char[] num_arr = number.toCharArray();
     int idx = 0;
