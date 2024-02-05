@@ -29,9 +29,8 @@ public class _22_numberPattern {
       lowerBound = n - i + 2;
       for (int j = 0; j < count; j++) {
         if (numToPrint >= lowerBound) System.out.print(numToPrint);
-        if (numToPrint == lowerBound) {
-          continue;
-        } else numToPrint--;
+        if (numToPrint == lowerBound) continue;
+        else numToPrint--;
       }
 
       timesToRepeat = lowerBound;
