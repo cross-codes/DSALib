@@ -1,6 +1,7 @@
 package striver._1_basics._4;
 
 public class _6_sumOfDivisors {
+
   public static int sgn(double x) {
     if (x > 0) return 1;
     else if (x == 0) return 0;
@@ -21,9 +22,5 @@ public class _6_sumOfDivisors {
     int sum = 0;
     for (int i = 1; i <= n; i++) sum += sumOfDivisors(i);
     return sum;
-  }
-
-  public static void main(String[] args) {
-    System.out.println(sumOfAllDivisors(5));
   }
 }

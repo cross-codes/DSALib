@@ -7,9 +7,10 @@ import java.io.InputStreamReader;
 public class _5_armstrongNumber {
   public static boolean isArmstrong(int n) {
     int sum = 0, idx = n, digit = -1;
+    int numOfDigits = Integer.toString(n).toCharArray().length;
     while (n != 0) {
       digit = n % 10;
-      sum += digit * digit * digit;
+      sum += Math.pow(digit, numOfDigits);
       n /= 10;
     }
 
