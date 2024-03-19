@@ -12,4 +12,12 @@ public class _shellSort {
           v[j + gap] = temp;
         }
   }
+
+  public static void main(String[] args) {
+    int[] nums = {2, 1, 3, 4, 5, 9, 10};
+    shellsort(nums, nums.length);
+    for (int var : nums) {
+      System.out.println(var);
+    }
+  }
 }
