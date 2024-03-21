@@ -1,21 +1,20 @@
 package striver._3_arrays._2;
 
-import java.util.ArrayList;
-import java.util.Collections;
-
 public class _5_maximumSubarrayLength {
-  public static int longestSubarrayWithSumK(int[] arr, long k) {
-    long sum = Long.MIN_VALUE, currSum = 0;
-    ArrayList<Integer> lengths = new ArrayList<>();
-    int length = 0;
-    for (int var : arr) {
-      currSum += var;
-      length++;
-      if (currSum > sum) {
-        currSum = 0;
-        length = 0;
-      } else if (currSum == sum) lengths.add(length);
+  public static int longestSubarrayWithSumK(int[] a, long k) {
+    int arrLength = a.length, left = 0, right = 0;
+    long sum = a[0];
+    int maxLen = 0;
+
+    while (right < arrLength) {
+      while (left <= right && sum > k) {
+        sum -= a[left];
+        left++;
+      }
+      if (sum == k) maxLen = Math.max(maxLen, right - left + 1);
+      right++;
+      if (right < arrLength) sum += a[right];
     }
-    return Collections.max(lengths);
+    return maxLen;
   }
 }

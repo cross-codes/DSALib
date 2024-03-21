@@ -21,8 +21,6 @@ public class _4_maximumSubarray {
   public static int maxSubArray(int[] nums) {
     int maximumSum = Integer.MIN_VALUE, sum = 0;
     for (int var : nums) {
-
-
       sum += var;
       if (sum >= maximumSum) maximumSum = sum;
       if (sum < 0) sum = 0;
