@@ -10,9 +10,9 @@ public class _14_subArrayWithGivenSum {
 
     // Now find the total number of combinations of sums that differ to k
     // sum(i, j) = sum (0, j) - sum (0, i) ; i < j
-    for (int start = 0; start < len + 1; start++) {
+    for (int start = 0; start < len + 1; start++)
       for (int end = len; end > start; end--) if (sums[end] - sums[start] == k) ans++;
-    }
+
     return ans;
   }
 }
