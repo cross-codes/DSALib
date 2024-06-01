@@ -14,23 +14,17 @@ package striver._4_binarySearch._1;
  * </pre>
  */
 public class _2_lowerBound {
-  public static int lowerBound(int[] nums, int x) {
-    int n = nums.length, L = 0, R = n - 1, m = -1;
+  public static int lowerBound(long[] arr, int n, int x) {
+    int L = 0, R = n - 1, m = -1;
     while (L != R) {
       if ((L + R) % 2 != 0) m = (L + R) / 2 + 1;
       else m = (L + R) / 2;
 
-      if (nums[m] > x) R = m - 1;
+      if (arr[m] > x) R = m - 1;
       else L = m;
     }
 
-    for (; L > 0; L--) if (nums[L] <= x) return L + 1;
+    for (; L > 0; L--) if (arr[L] <= x) return L + 1;
     return n;
-  }
-
-  public static void main(String[] args) {
-    int[] arr = {3, 5, 8, 15, 19};
-    int T = 9;
-    System.out.println(lowerBound(arr, T));
   }
 }
