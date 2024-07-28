@@ -8,4 +8,8 @@ public class _7_multiplyStrings {
     BigInteger n2 = new BigInteger(num2);
     return String.valueOf(n1.multiply(n2));
   }
+
+  public static void main(String[] args) {
+    System.out.println(multiply("1124", "1234"));
+  }
 }
